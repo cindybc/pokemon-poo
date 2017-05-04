@@ -1,9 +1,3 @@
-function ataque(){
-	var poke1 = document.getElementById("selectPoke1").value;
-	var poke2 = document.getElementById("selectPoke2").value;
-	
-    
-    document.getElementById("pelea").innerHTML+= poke1 + " ataco a " + poke2 + " y " + poke2 + " tiene una vida de " ;
 
 
 function Pokemon(nombre, color, poderDeAtaque){
@@ -26,12 +20,16 @@ function Pokemon(nombre, color, poderDeAtaque){
 	}
 };
 
-const Pikachu = new Pokemon(poke1, "amarillo", 100);
-const Charmander= new Pokemon(poke2, "rojo", 20);
-
-poke1.atacar(poke2);
+function ataque(){
+	var poke1 = document.getElementById("selectPoke1").value;
+	var poke2 = document.getElementById("selectPoke2").value;
+	
+	var gamer1= new Pokemon(poke1,"verde", 400);
+	var gamer2 = new Pokemon(poke2, "azul", 200);
+	gamer1.atacar(gamer2);
+    document.getElementById("pelea").innerHTML+= gamer1.nombre + " ataco a " + gamer2.nombre + " y " + gamer2.nombre + " tiene una vida de " + gamer2.vida;
+   
 };
-
 
 
 //console.log(Charmander.vida);
