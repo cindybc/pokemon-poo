@@ -29,14 +29,14 @@ function ataque(){
 
 
 function iguales(){
-			if(poke1 == poke2){
-				alert("Se esta atacando a si mismo, elija otro pokemon!!");
+	if(poke1 == poke2){
+	  alert("Se esta atacando a si mismo, elija otro pokemon!!");
         return document.getElementById("pelea").innerHTML= "";
-			}
-		}
-		iguales();
+	 }
+    }
+iguales();
 };
 
 
 
-//console.log(Charmander.vida);
+
